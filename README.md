@@ -37,3 +37,8 @@ crontab -e
 
 
 @reboot python3 /home/manage.py runserver ip:80 --insecure
+
+
+ipfs must first, check log
+grep CRON /var/log/syslog
+
