@@ -7,6 +7,21 @@ Dcentralised url shortening service base on ipfs
 http://t.bdaily.club
 
 
+install ipfs https://docs.ipfs.io/guides/guides/install/#installing-with-ipfs-update
+
+use pip3
+
+sudo apt-get install python3
+sudo apt install python3-pip
+
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150
+
+ 
+python --version
+
+
+
 ### Run
 
     1. ipfs daemon
