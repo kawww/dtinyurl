@@ -32,4 +32,6 @@ python --version
 
 
 1 * * * * /usr/local/bin/ipfs daemon 
-@reboot python3 /home/manage.py runserver ip:80 --insecure
+@reboot python3 
+
+/home/manage.py runserver ip:80 --insecure
