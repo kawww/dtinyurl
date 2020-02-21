@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%s44n4pyk20t^ml3=@%sidq#)2x9z!ac!i3sq+ph((&x)2he71'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['linkipfs.com']
 
 
 # Application definition
@@ -119,4 +119,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "web", "static")]
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+STATICFILES_DIRS = (
+            os.path.join(BASE_DIR, "web", "static"),'/home/linkipfs/web/static/',)
+
+
